@@ -3,11 +3,26 @@
     padding: 0;
 }
 
-main{
-    background:url('assets/images/home.jpg');
-    height: 80vh;
-    
-}
-p{
-    color: blue;
-}
+ .main{
+   background-image: url('../assets/images/home.jpg');
+   height: 80vh;
+   position: relative;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: max(1200px , 100vw );
+ }
+ .main .box{
+   height: 80vh;
+   width: 100%;
+   opacity: 0.44;
+   background-color: black;
+   position: absolute;
+   top: 0;
+ }
+ nav{
+   display: flex;
+   align-items: center;
+   max-width: 80vw;
+   margin: auto;
+   justify-content: space-around;
+ }
