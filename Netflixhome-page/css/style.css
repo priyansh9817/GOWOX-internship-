@@ -1,28 +1,131 @@
-*{
-    margin: 0;
-    padding: 0;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
- .main{
-   background-image: url('../assets/images/home.jpg');
-   height: 80vh;
-   position: relative;
-   background-position: center center;
-   background-repeat: no-repeat;
-   background-size: max(1200px , 100vw );
- }
- .main .box{
-   height: 80vh;
-   width: 100%;
-   opacity: 0.44;
-   background-color: black;
-   position: absolute;
-   top: 0;
- }
- nav{
-   display: flex;
-   align-items: center;
-   max-width: 80vw;
-   margin: auto;
-   justify-content: space-around;
- }
+.main {
+  background-image: url('../assets/images/home.jpg');
+  height: 90vh;
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+  background-color: black;
+}
+
+.main .box {
+  height: 90vh;
+  width: 100%;
+  opacity: 0.44;
+  background-color:black;
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  max-width: 80vw;
+  margin: auto;
+  justify-content: space-around;
+  height: 62px;
+}
+
+nav img {
+  color: red;
+  width: 114px;
+  position: relative;
+  z-index: 10;
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+.hero {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 23px;
+  padding: 30px;
+  text-align: center;
+
+
+}
+.hero> :nth-child(1){
+  font-size: 48px;
+  line-height: 47px;
+  font-weight: 700;
+}
+.hero> :nth-child(2){
+  font-weight: 700;
+  font-size: 24px;
+}
+.hero> :nth-child(3){
+  font-weight: 400;
+  font-size: 20px;
+}
+.sepration{
+  height: 11px;
+  background-color: grey;
+}
+.btn{
+  padding: 3px 8px;
+  font-weight: bold;
+  background-color: white;
+}
+.btn-red{
+  background-color: red;
+  color: white;
+
+}
+.btn-red-sm{
+  background-color: red;
+  
+}
+.features{
+  padding: 50px 12%;
+  font-size: 22px;
+}
+
+.row{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+
+.text-col{
+  flex-basis: 50%;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.img-col{
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+
+.img-col img{
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+.features h2{
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
