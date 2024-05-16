@@ -92,7 +92,8 @@ nav button {
 }
 .btn-red-sm{
   background-color: red;
-  
+  padding: 12px;
+  border-radius: 8px;  
 }
 .features{
   padding: 50px 12%;
