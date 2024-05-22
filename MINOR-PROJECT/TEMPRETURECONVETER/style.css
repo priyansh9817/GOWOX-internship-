@@ -16,6 +16,7 @@ body{
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    color: #3494e6;
 
 }
 select, input{
@@ -28,7 +29,7 @@ select, input{
 }
 
 button{
-    background-color: #4CAF50;
+    background: linear-gradient(to right, #3494e6, #ec6ead);
     color: white;
     padding: 10px;
     border: none;
