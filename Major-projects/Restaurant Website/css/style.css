@@ -269,10 +269,15 @@ p{
 /* ====== 
 explore food
 =========== */
+.explore-food .row{
+    display: inline;
+
+}
 .explore-food .card{
     border: none;
     background-color: transparent;
     border-radius: 0.9375rem;
+    display: flex;
 }
 .explore-food .card img{
     border-radius: 0.9375rem;
