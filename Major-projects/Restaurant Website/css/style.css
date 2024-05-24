@@ -306,7 +306,7 @@ explore food
     text-align: center;
 
 }
-.testimonial-section .carousel-caption img{
+.testimonial-section .carousel-item img{
     max-width: 5rem;
     border-radius: 50%;
     padding: 0.3125rem;
