@@ -9,7 +9,12 @@
 <body>
     <div class="converter">
         <h2>Temperature Converter</h2>
-        <label for="FromUnit">From:</label>
+        <label for="FromUnit">From:</label>select  id="toUnit">
+        <option value="C">Celcious</option>
+        <option value="F">Faharenheit</option>
+        <option value="K">Kelvin</option>
+        <option value="R">Rankine</option>
+    </select>
         <select  id="fromUnit">
             <option value="C">Celcious</option>
             <option value="F">Faharenheit</option>
@@ -17,18 +22,14 @@
             <option value="R">Rankine</option>
         </select>
         <label for="toUnit">To:</label>
-        <select  id="toUnit">
-            <option value="C">Celcious</option>
-            <option value="F">Faharenheit</option>
-            <option value="K">Kelvin</option>
-            <option value="R">Rankine</option>
-        </select>
+        
         <label for="temperature">Temperature</label>
         <input type="number" id="temperature" placeholder="Enter Temperature ">
         <button onclick="convert()">convert</button>
 
         <label for="result">Result</label>
         <input type="text" id="result" readonly>
+        <input type="text" id="re" readonly>
     </div>
     <script>
         function convert(){
