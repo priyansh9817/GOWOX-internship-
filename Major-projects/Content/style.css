@@ -1,11 +1,12 @@
 body {
     padding-top: 56px;
-    background-color: #f8f9fa;
+    background: linear-gradient(301deg, #0a59e3, transparent);
 }
 
 .card {
     margin-bottom: 20px;
     border: none;
+    background: linear-gradient(276deg, #05c6f3, transparent);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
