@@ -1,12 +1,11 @@
 body {
     padding-top: 56px;
-    background: linear-gradient(301deg, #0a59e3, transparent);
+    background-color: #f8f9fa;
 }
 
 .card {
     margin-bottom: 20px;
     border: none;
-    background: linear-gradient(276deg, #05c6f3, transparent);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -51,4 +50,10 @@ body {
 
 .list-group-item:hover {
     background-color: #f1f1f1;
+}
+.col-md-3{
+    background: linear-gradient(89deg, #1b6489, transparent);
+   
+    box-shadow: 3px 6px 5px;
+
 }

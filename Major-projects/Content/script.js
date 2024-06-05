@@ -7,9 +7,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const contentFolder = document.getElementById('contentFolder');
     const editContentFolder = document.getElementById('editContentFolder');
 
-    let folders = [];
+    let folders = JSON.parse(localStorage.getItem('folders')) || [];
     let editContentIndex = null;
     let editFolderName = null;
+
+    updateFolderList();
+    updateContentFolderOptions();
 
     folderForm.addEventListener('submit', function(event) {
         event.preventDefault();
@@ -22,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         };
 
         folders.push(newFolder);
+        saveToLocalStorage();
         updateFolderList();
         updateContentFolderOptions();
 
@@ -46,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const folder = folders.find(f => f.name === folderName);
         folder.contents.push(newContent);
+        saveToLocalStorage();
         updateContentList(folder.contents);
 
         $('#newContentModal').modal('hide');
@@ -69,6 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const folder = folders.find(f => f.name === editFolderName);
         folder.contents[editContentIndex] = updatedContent;
+        saveToLocalStorage();
         updateContentList(folder.contents);
 
         $('#editContentModal').modal('hide');
@@ -104,6 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 $('#editContentModal').modal('show');
             } else if (action === 'delete') {
                 folder.contents.splice(contentIndex, 1);
+                saveToLocalStorage();
                 updateContentList(folder.contents);
             }
         }
@@ -155,5 +162,9 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             return '';
         }
+    }
+
+    function saveToLocalStorage() {
+        localStorage.setItem('folders', JSON.stringify(folders));
     }
 });
